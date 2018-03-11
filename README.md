@@ -2,14 +2,14 @@
 Project goal: Pulling contacts from the Hubspot API
 
 ## Creating "My HubSpot" page
-1. Routes file ([routes.rb](https://github.com/kvnlawrence/My-Hubspot/blob/master/config/routes.rb)),
+1. Routes file ([routes.rb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/config/routes.rb)),
 added: 
 
 ```
 get 'myhubspot', to: 'pages#myhubspot'
 ```
  
-2. Pages Controller ([pages_controller.rb](https://github.com/kvnlawrence/My-Hubspot/blob/master/app/controllers/pages_controller.rb)), added:
+2. Pages Controller ([pages_controller.rb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/app/controllers/pages_controller.rb)), added:
 
 ```
 def myhubspot
@@ -18,7 +18,7 @@ def myhubspot
 
 3. Created view file ([myhubspot.html.erb](https://github.com/kvnlawrence/My-Hubspot/blob/master/app/views/pages/myhubspot.html.erb)).
 
-4. Add rails link to myhubspot.html.erb in ([application.html.erb](https://github.com/kvnlawrence/My-Hubspot/blob/master/app/views/layouts/application.html.erb)):
+4. Add rails link to myhubspot.html.erb in ([application.html.erb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/app/views/layouts/application.html.erb)):
 
 ```
 <li><%= link_to "My HubSpot", myhubspot_path %></li>
@@ -27,9 +27,9 @@ def myhubspot
 
 ## Connected to HubSpot API
 1. Installed [Hubspot REST API Gem](https://github.com/adimichele/hubspot-ruby)
-2. Created initializer ([hubspot.rb](https://github.com/kvnlawrence/My-Hubspot/blob/master/config/initializers/hubspot.rb)) w/ HubSpot API key
+2. Created initializer ([hubspot.rb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/config/initializers/hubspot.rb)) w/ HubSpot API key
 
-## Improving ([My Hubspot Page](https://github.com/kvnlawrence/My-Hubspot/blob/master/app/views/pages/myhubspot.html.erb)) page 
+## Improving ([My Hubspot Page](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/app/views/pages/myhubspot.html.erb)) page 
 1. Created table to show contacts using HTML, CSS, and Bootstrap
 2. Embedded Ruby to retrieve all contacts from hubspot API:
 ```
