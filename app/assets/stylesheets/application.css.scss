@@ -1,0 +1,99 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ 
+ /*
+ Can use classes, etc. from any html page in pages
+ */
+ 
+ /*
+ *= require bootstrap-table
+ */
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+
+
+// Typography styles
+
+h1, h2, h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+//Background Gradient
+.navbar, .home-callout {
+    //Gradient provided by https://webgradients.com/?ref=producthunt
+    background-image: linear-gradient(to left, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
+}
+// navbar styles
+.navbar {
+    border: none;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background: #1D416C;
+}
+
+.navbar-default .navbar-toggle {
+    border: 2px solid #1D416C;
+    &:hover, &:focus {
+        background-color: white;
+    }
+}
+
+.navbar-brand {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: #1D416C;
+    &:hover {
+        color: #1D416C;
+        opacity:0.75;
+    }
+}
+
+.navbar-default  {
+    color: #1D416C;
+    opacity:0.75;
+}
+
+.home-callout {
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    color: #1D416C;
+}
+
+.alert-notice {
+    display:none;
+}
+
+.home-signup-links {
+    margin-top: 30px;
+}
+
+.thead {
+    background: #fad0c4;
+    color: #1D416C;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
