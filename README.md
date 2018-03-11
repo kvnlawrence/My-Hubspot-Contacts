@@ -16,7 +16,7 @@ def myhubspot
   end
 ```
 
-3. Created view file ([myhubspot.html.erb](https://github.com/kvnlawrence/My-Hubspot/blob/master/app/views/pages/myhubspot.html.erb)).
+3. Created view file ([myhubspot.html.erb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/app/views/pages/myhubspot.html.erb)).
 
 4. Add rails link to myhubspot.html.erb in ([application.html.erb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/app/views/layouts/application.html.erb)):
 
