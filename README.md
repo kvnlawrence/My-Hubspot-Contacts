@@ -1,5 +1,5 @@
 # My Hubspot
-Project goal: Pulling contacts from the Hubspot API
+Project goal: Get contact information from the HubSpot API and display it in a table to customers.
 
 ## Creating "My HubSpot" page
 1. Routes file ([routes.rb](https://github.com/kvnlawrence/MyHubspot-Contacts/blob/master/config/routes.rb)),
